@@ -1,0 +1,302 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr 2fr;
+    height: 100vh ;
+}
+.container > div {
+    border: solid red
+}
+.headerContainer {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1fr 1fr;  
+    background-color:white;
+    box-shadow: 1px 10px 1px gainsboro;
+    height:100%;
+}
+#searchbar {
+    padding-top: 10px;
+    padding-left: 20px;  
+}
+input {
+    background-color: rgb(226,232,240);
+    border: none;
+}
+#iconSearch {
+    display: inline-block;
+    padding-top: 8px;
+    position: relative;
+    top: 15px;
+}
+#username {
+    border-radius: 20px;
+    width: 800px;
+    padding-top: 40px;
+    padding: 12px;
+
+}
+
+#gnome {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    float:left;
+    margin-left: 30px;
+    margin-right: 12px;
+    margin-top: 22px;
+}
+#gnomeTwo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+#headerH {
+    display: inline-block;
+    
+}
+h2 span {
+    position: relative;
+   top:-12px;
+   left: 20px;
+}
+
+#bell {
+    padding-right: 20px;
+}
+#headLi {
+    grid-area:2/2/2/2;
+    font-size: 0;
+    justify-self:right ;
+   min-width: 400.5px;
+   padding-right: 15px;
+}
+#pInfo > div{
+    grid-area:2/1/2/1;
+    min-width: 330px;
+
+}
+#pInfoTwo {
+    grid-area: 1/2/1/2;
+    justify-self:right ;
+   min-width: 300.5px;
+ 
+}
+
+.sidebar {
+    grid-area:1/1/5/1 ;
+    display: grid;
+    grid-template-rows: 1fr 2fr 2fr;
+    background-color: rgb(25,146,212);
+}
+
+#logo {
+    grid-area:1/1/1/1;
+    padding-left: 15px;
+}
+#logoOne {
+    list-style: url('/home/evan/repos/DashboardHill/donaldsphotos/vector-square.png');  
+    padding-left: 15px;
+    padding-top: 30px;
+    font-weight: bold;
+}
+.liOne {
+    grid-row-start: 2;
+    grid-row-end: 2;
+    padding-left: 15px;
+}
+
+.liTwo {
+    grid-row-start: 3;
+    grid-row-end: 3; 
+    padding-left: 15px;
+}
+#iOne {
+    list-style: url('/home/evan/repos/DashboardHill/donaldsphotos/home (2).png'); 
+}
+#iTwo {
+    list-style: url('/home/evan/repos/DashboardHill/donaldsphotos/card-account-details-outline.png');
+}
+#iThree {
+    list-style: url('/home/evan/repos/DashboardHill/donaldsphotos/message-settings-outline.png');
+}
+#iFour {
+    list-style: url('/home/evan/repos/DashboardHill/donaldsphotos/clock-minus-outline.png');
+}
+#iFive {
+    list-style: url('/home/evan/repos/DashboardHill/donaldsphotos/note-multiple-outline.png');
+}
+#iSix {
+    list-style: url('/home/evan/repos/DashboardHill/donaldsphotos/account-group-outline.png');
+}
+#iSeven {
+    list-style:url('/home/evan/repos/DashboardHill/donaldsphotos/cog-outline (1).png') ;
+}
+#iEight {
+    list-style:url('/home/evan/repos/DashboardHill/donaldsphotos/help-box-outline.png') ;
+}
+#iNine {
+    list-style:url('/home/evan/repos/DashboardHill/donaldsphotos/shield-check-outline.png') ;
+}
+.header {
+    grid-area: 1/2/1/5;
+}
+
+.main {
+    grid-area: 2/2/5/4;
+    height: 100%;
+}
+#mainContainer {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1fr 5fr 5fr 5fr;
+    height:100%;
+    gap:20px;
+    padding-top: 45px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+    background-color: rgb(226,232,240);
+}
+#zero {
+    grid-area:1/1/1/3;
+}
+#one ,#two ,#three,#four,#five, #six {
+    border-radius: 8px;
+    background-color:white;
+    border-left: solid 10px hsla(51, 88%, 40%, 0.815);
+    display: grid;
+    height:100%;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows:2fr 1fr;
+    box-shadow: 10px 5px 5px gainsboro;
+    text-align: left;
+    margin-left: 10px;
+    padding-left: 30px;
+    box-sizing: border-box;
+    
+    
+}
+#contentOne  {
+    grid-area:2/1/1/1;
+}
+#oneInner {
+    grid-area: 2/2/2/2;
+    display: inline;
+    
+    
+   
+}
+#eye,#link,#star {
+   margin-left: 5px;
+   float: right;
+   padding: 10px;
+}
+
+#three {
+    grid-area:2/1/3/2;
+}
+#four {
+    grid-area:2/2/3/2;
+}
+#five {
+    grid-area:3/1/4/1;
+}
+#six {
+    grid-area:3/2/4/2;
+}
+
+.rightSide {
+    grid-area:2/4/5/5;
+}
+
+#sideContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5fr 1fr 5fr;
+    height: 100%;
+    gap:20px;
+    padding-top:45px;
+    padding-left: 20px;
+    padding-bottom: 40px;
+    background-color: rgb(226,232,240);
+    box-sizing: border-box;
+}
+
+#sideOne {
+   grid-area:2/1/2/2 ;
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 1fr 1fr 1fr;
+    box-shadow: 10px 5px 5px gainsboro;
+    border-radius: 8px;
+    background-color:white;
+    box-sizing: border-box;
+    padding:25px;
+    height: 100%;
+}
+#sideTwo {
+    grid-area: 4/1/5/2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    box-shadow: 10px 5px 5px gainsboro;
+    border-radius: 8px;
+    background-color:white;
+    box-sizing: border-box;
+}
+#sideContent > p {
+    display: inline-block;
+
+}
+#sideContent > h4 {
+    margin-bottom: -15px;
+    line-height: 10px;
+}
+#gnomeThree {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
+    float:left;
+}
+
+
+#butt,#buttTwo {
+    border-radius: 25px;
+    background-color: #1992d4;
+    color:white; 
+    padding:12px;
+    min-height: 40px;
+    min-width: 100px;
+    border: none;
+    margin-left: 25px;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 15px;
+}
+
+li {
+    
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    
+    
+}
+
+li span {
+    position: relative;
+    left: 10px;
+    top: -5px;
+    right: 5px;
+    padding-left: 10px;
+  }
+ #zero > h2 {
+    padding-left: 20px;
+ }
